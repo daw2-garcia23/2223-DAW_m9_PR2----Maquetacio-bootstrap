@@ -9,8 +9,15 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/bcf5172c33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.scss/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
-<body>
+<body class="font-roboto">
     <header>
         <div class="container-fluid mt-5">
             <div class="container mb-3">
@@ -23,16 +30,16 @@
                             <div class="container-fluid">
                               <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                  <li class="nav-item ps-3">
+                                    <a class="nav-link" aria-current="page" href="#" id="lila">Home</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="nav-item ps-3">
                                     <a class="nav-link" href="#">Portfolio</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="nav-item ps-3">
                                     <a class="nav-link" href="#">About Me</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="nav-item ps-3">
                                     <a class="nav-link" href="#">Testimonials</a>
                                   </li>
                                 </ul>
@@ -41,7 +48,7 @@
                           </nav>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-outline-primary">Contact Me</button>
+                        <button type="button" class="btn btn-outline-primary" id="lila">Contact Me</button>
                     </div>
                 </div>
             </div>
@@ -52,25 +59,26 @@
             <div class="container">
                 <section id="header">
                     <div class="row bg-info pb-5 pt-5 bg-opacity-10">
-                        <div class="col-6 mt-5 ms-n5">
-                            <h5>Hey, I am John</h5>
-                            <h1>I create product design and brand experience</h1>
+                        <div class="col-6" id="bajar-principio">
+                            <h5 class="fw-bold">Hey, I am John</h5>
+                            <h1 class="fw-bold">I create <span id="lila" class="fw-bold">product design</span> and brand experience</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                             <button type="button" class="btn btn-primary">Get In Touch</button>
                         </div>
-                        <div class="col-6 mt-5">
+                        <div class="col-6 ">
                             <img class="img-fluid"src="images/hombre.png" alt="hombre">
                         </div>
                     </div>
                 </section>
                 <!-- Skills con 4 cards -->
                 <h5 class="mt-5">My skills</h5>
-                <h1>My experience</h1>
+                <h1 class="fw-bold mb-5">My experience</h1>
                 <div class="row row-cols-1 row-cols-md-4 ">
                     <div class="col-4">
                       <div class="card h-100 bg-info bg-opacity-10">
-                        <div class="card-body">
-                          <h5 class="card-title">Strategy & Direction</h5>
+                        <div class="card-body border-bottom border-primary">
+                          <img src="/images/chain.png" alt="chain" width="35%">
+                          <h5 class="card-title mt-2 fw-bold">Strategy & Direction</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                         </div>
                       </div>
@@ -78,7 +86,8 @@
                     <div class="col-4">
                       <div class="card h-100 bg-info bg-opacity-10">
                         <div class="card-body">
-                          <h5 class="card-title">Branding & Logo</h5>
+                          <img src="/images/tag.png" alt="chain" width="35%">
+                          <h5 class="card-title mt-2 fw-bold">Branding & Logo</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                         </div>
                       </div>
@@ -86,7 +95,8 @@
                     <div class="col-4">
                       <div class="card h-100 bg-info bg-opacity-10">
                         <div class="card-body">
-                          <h5 class="card-title">UI & UX Design</h5>
+                          <img src="/images/pen.png" alt="chain" width="35%">
+                          <h5 class="card-title mt-2 fw-bold">UI & UX Design</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                         </div>
                       </div>
@@ -94,7 +104,8 @@
                     <div class="col-4">
                         <div class="card h-100 bg-info bg-opacity-10">
                           <div class="card-body">
-                            <h5 class="card-title">Webflow Development</h5>
+                            <img src="/images/codet.png" alt="chain" width="35%">
+                            <h5 class="card-title mt-2 fw-bold">Webflow Development</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                           </div>
                         </div>
@@ -106,7 +117,7 @@
                       <div class="col-6 mt-5">
                         <img class="img-fluid"src="images/am.png" alt="hombre">
                       </div>
-                        <div class="col-6 mt-5 ms-n5">
+                        <div class="col-6 mt-5 ms-n5" id="bajar-about">
                             <p class="fw-bold">About</p>
                             <h3 class="fw-bold">About Me</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.</p>
@@ -118,15 +129,15 @@
                 <!-- Portfolio -->
                 <section class="mt-5 mb-5">
                   <p class="fw-bold">Recent Projects</p>
-                  <h2>My Portfolio</h2>
+                  <h2 class="fw-bold mb-5">My Portfolio</h2>
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                       <div class="card h-100">
                         <img src="images/img2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Ahuse</h5>
+                          <h5 class="card-title fw-bold">Ahuse</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                          <a href="#">View in Dribble</a>
+                          <a href="#" class="text-dark">View in Dribble</a>   
                         </div>
                       </div>
                     </div>
@@ -134,9 +145,9 @@
                       <div class="card h-100">
                         <img src="images/img3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">App Dashboard</h5>
+                          <h5 class="card-title fw-bold">App Dashboard</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                          <a href="#">View in Dribble</a>
+                          <a href="#" class="text-dark">View in Dribble</a>
                         </div>
                       </div>
                     </div>
@@ -144,9 +155,9 @@
                       <div class="card h-100">
                         <img src="images/img1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Easy Rent</h5>
+                          <h5 class="card-title fw-bold">Easy Rent</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                          <a href="#">View in Dribble</a>
+                          <a href="#" class="text-dark">View in Dribble</a>
                         </div>
                       </div>
                     </div>
@@ -163,15 +174,18 @@
                       <div class="col">
                           <div class="card">
                             <div class="m-4">
-                            <p>Estrellas</p>
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            <p class="card-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                               <div class="d-flex ms-2 mt-4" width="100">
                                 <div>
                                   <img src="/images/av1.png" width="50" alt="avatar">
                                 </div>
                                 <div class="ms-3">
                                   <p class="fw-bold">Dianne Russell</p>
-                                  <p class="mt-negative3">Starbucks</p>
+                                  <p class="mt-negative3" id="margen-menos">Starbucks</p>
                                 </div>
                               </div>
                           </div>
@@ -180,15 +194,18 @@
                       <div class="col">
                         <div class="card">
                           <div class="m-4">
-                          <p>Estrellas</p>
-                          <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <p class="card-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                             <div class="d-flex ms-2 mt-4" width="100">
                               <div>
-                                <img src="/images/av1.png" width="50" alt="avatar">
+                                <img src="/images/av2.png" width="50" alt="avatar">
                               </div>
                               <div class="ms-3">
-                                <p class="fw-bold">Dianne Russell</p>
-                                <p class="mt-negative3">Starbucks</p>
+                                <p class="fw-bold">Kristin Watson</p>
+                                <p class="mt-negative3" id="margen-menos">Louis Vuitton</p>
                               </div>
                             </div>
                         </div>
@@ -197,15 +214,18 @@
                     <div class="col">
                       <div class="card">
                         <div class="m-4">
-                        <p>Estrellas</p>
-                        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        <p class="card-text mt-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                           <div class="d-flex ms-2 mt-4" width="100">
                             <div>
-                              <img src="/images/av1.png" width="50" alt="avatar">
+                              <img src="/images/av3.png" width="50" alt="avatar">
                             </div>
                             <div class="ms-3">
-                              <p class="fw-bold">Dianne Russell</p>
-                              <p class="mt-negative3">Starbucks</p>
+                              <p class="fw-bold">Kathryn Murphy</p>
+                              <p class="mt-negative3" id="margen-menos">McDonald's</p>
                             </div>
                           </div>
                       </div>
@@ -222,39 +242,39 @@
                 </div>
 
                 <div>
-                  <form class="row g-3 w-50 ms-5">
+                  <form class="row g-3">
                     <div class="col-md-6">
                       <label class="form-label">First name</label>
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control border border-primary">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label">Last name</label>
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control border border-primary">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label">Email</label>
-                      <input type="email" class="form-control">
+                      <input type="email" class="form-control border border-primary">
                     </div>
                     <div class="col-md-6">
                       <label class="form-label">Phone number</label>
-                      <input type="number" class="form-control">
+                      <input type="number" class="form-control border border-primary">
                     </div>
                     <div class="col-12">
                     <div class="col-md-12">
                       <label class="form-label">Choose a topic</label>
-                      <select class="form-select">
+                      <select class="form-select border border-primary">
                         <option selected>Select one...</option>
                         <option>...</option>
                       </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-4">
                       <label>Message</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea class="form-control border border-primary" rows="3"></textarea>
                     </div>
                     <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
+                      <div class="form-check mt-4">
+                        <input class="form-check-input border border-primary" type="checkbox" id="gridCheck">
+                        <label class="form-check-label  " for="gridCheck">
                           Accept the terms
                         </label>
                       </div>
@@ -266,10 +286,10 @@
                 </div>
               </section>    
     </main>
-    <footer>
-      <div class="container-fluid">
+    <footer class="container-fluid">
+      <div class="container-fluid pb-5">
         <div class="container">
-          <section class="bg-info bg-opacity-10 mt-4">
+          <section class="bg-info bg-opacity-10 mt-4 pb-3">
             <div class="row m-5">
               <div class="col-2">
                   <img src="images/Logo.png" alt="logo">
@@ -279,41 +299,41 @@
                       <div class="container-fluid">
                         <div class="collapse navbar-collapse">
                           <ul class="navbar-nav">
-                            <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Portfolio</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" href="#">Portfolio</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">About Me</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" href="#">About Me</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contact</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" href="#">Contact</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Testimonials</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" href="#">Testimonials</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Portfolio</a>
+                            <li class="nav-item text-dark">
+                              <a class="nav-link text-dark" href="#">Portfolio</a>
                             </li>
                           </ul>
                         </div>
                       </div>
                     </nav>
                    <div class="col-2 mt-3">  
-                      <i class="fa-brands fa-facebook-f"></i>
-                      <i class="fa-brands fa-instagram"></i>
-                      <i class="fa-brands fa-twitter"></i>
-                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-facebook-f text-dark ms-2"></i>
+                      <i class="fa-brands fa-instagram text-dark ms-2"></i>
+                      <i class="fa-brands fa-twitter text-dark ms-2"></i>
+                      <i class="fa-brands fa-linkedin text-dark ms-2"></i>
                    </div>
               </div>
           </div>
-          <div class="row ms-5">
-            <div class="col border-top-dark">
-              <p>Made with 💖 by Airdokan</p>
+          <div class="row ms-5 mt-5">
+            <div class="col border-top border-dark">
+              <p>Made with 💖 by Joel</p>
             </div>
-            <div class="col d-flex">
+            <div class="col d-flex border-top border-dark me-5 pb-3">
               <p>Privacy Policy</p>
               <p class="ms-3">Terms of Service</p>
               <p class="ms-3">Cookies Settings</p>
